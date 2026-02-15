@@ -4,7 +4,7 @@ namespace Extension.Tool.Test;
 [TestFixture]
 public class TransformerTest
 {
-    private ITransformer _transformer;
+    private ITransformer _transformer = null!;
     [Test]
     public void Transform_Expected()
     {
@@ -27,14 +27,14 @@ public class TransformerTest
 
 public class PersonDto
 {
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public int Age { get; set; }
-    public string LastName { get; set; }
+    public string? LastName { get; set; }
 }
 
 public class Person
 {
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public int Age { get; set; }
-    public string LastName { get; set; }
+    public string? LastName { get; set; }
 }
